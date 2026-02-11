@@ -1,3 +1,35 @@
 body {
   font-family: Arial, sans-serif;
 }
+
+.flex-container {
+  background-color: lightblue;
+  width: 100%;
+  display: flex;
+}
+
+.flex-item {
+  background: coral;
+  border: 1px solid black;
+  padding: 20px;
+
+  /*flex: grow, shrink, basis*/
+  flex: 1 0 0px;
+}
+
+.item-1, .item-2 {
+  /* flex-shrink: 2;  Used for shrinking, 0 will not make it shrink. 1 is the default meaning it will shrink equally. 2 will make it shrink 2 times. */
+  /* flex-grow: 1; Grows the box, 0 is the default.*/
+}
+
+.item-3 {
+  /* flex-grow: 2; */
+  /* flex-shrink: 0; */
+  /* flex-basis: 200px;  sets the initial size of a flex item before any available space is distributed, acting as the starting point for flex-grow and flex-shrink. */
+  flex: 2;
+}
+
+.item-2 {
+  /*flex: grow, shrink and basis default to 0.*/
+  flex: 3;
+}
