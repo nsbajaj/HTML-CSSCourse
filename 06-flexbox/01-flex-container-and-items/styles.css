@@ -1,3 +1,22 @@
 body {
   font-family: Arial, sans-serif;
 }
+
+.flex-container {
+  display: flex;
+  background-color: grey;
+  /* flex-direction: row; Default behaviour */
+  /* flex-direction: column; To make it columns */
+  flex-direction: row;
+  flex-wrap: wrap; /* Brings additional content to next row */
+  gap: 10px; /* row and column spacing */
+  /* row-gap: 10px; adds spacing between rows */
+  /* columns-gap: 10px; adds spacing between columns */
+}
+
+.flex-item {
+  height: 200px;
+  width: 200px;
+  background-color: coral;
+  border: 1px solid black;
+}
