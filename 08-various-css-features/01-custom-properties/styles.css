@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+/* Essentially the html tag. */
+:root {
+  --primary-color: lightblue;
+  --secondary-color: lightcoral;
+  --tertiary-color: lightgreen;
+  --shadow-opacity: 0.5;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -12,6 +20,7 @@ header {
   background-color: lightblue;
   padding: 20px 0;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .container {
@@ -22,8 +31,20 @@ header {
 }
 
 .box {
-  width: 100%;
+  flex: 1;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, var(--shadow-opacity));
+}
+
+.box-1 {
+  background-color: var(--primary-color);
+}
+
+.box-2 {
+  background-color: var(--secondary-color);
+}
+
+.box-3 {
+  background-color: var(--tertiary-color);
 }
